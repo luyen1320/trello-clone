@@ -1,33 +1,14 @@
 @import './../../setting';
 
- ul.card-list{
-        list-style-type: none;
-        margin: 0;
-        max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
-        overflow-y: auto;
-        &::-webkit-scrollbar{
-          -webkit-appearance: none;
-        }
 
-        &::-webkit-scrollbar:vertical{
-          width: 11px;
-        }
 
-        &::-webkit-scrollbar-thumb{
-          background-color: darken($list-bg-color, 15);
-          border-right: 5px solid $list-bg-color ;
-        }
-
-        li.card-item{
+.card-item{
           background-color: white;
           padding: $gap;
           border-radius: $card-border-radius;
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
           cursor: pointer;
-
-          &:not(:last-child){
-            margin-bottom: $gap;
-          }
+          margin-bottom: $gap;
         
           img.card-cover{
             display: block;
@@ -37,4 +18,3 @@
             border-top-right-radius: $column-border-radius;
           }
         }
-    }
