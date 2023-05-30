@@ -1,6 +1,6 @@
 @import './../../setting';
 
- ul.task-list{
+ ul.card-list{
         list-style-type: none;
         margin: 0;
         max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
@@ -18,7 +18,7 @@
           border-right: 5px solid $list-bg-color ;
         }
 
-        li.task-item{
+        li.card-item{
           background-color: white;
           padding: $gap;
           border-radius: $card-border-radius;
@@ -29,7 +29,7 @@
             margin-bottom: $gap;
           }
         
-          img{
+          img.card-cover{
             display: block;
             width: calc(100% + 2 * #{$gap});
             margin: -$gap 0 $gap (-$gap);
