@@ -1,4 +1,5 @@
 import "./App.scss";
+import React from "react";
 import AppBar from "./components/AppBar/AppBar";
 import BoarBar from "./components/BoarBar/BoarBar";
 import BoardContent from "./components/BoardContent/BoardContent";
